@@ -1,0 +1,16 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+dealershep1:
+  nombre: TT
+  direccion: pachuca 
+  telefono: 7711226633 
+
+dealershep2:
+  nombre: Toyota  
+  direccion: Molango
+  telefono: 5566773344
+   
+dealershep3:
+  nombre: NAZCA 
+  direccion: Mexico
+  telefono: 5566774433

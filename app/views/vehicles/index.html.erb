@@ -1,0 +1,22 @@
+
+<header>
+        <%= link_to t('.Concesionarias'), dealerships_path %>
+</header>
+<%= turbo_frame_tag 'dealerships' do %>
+  <%= link_to t('.Todo'), vehicles_path %>
+
+  <%= render partial: 'dealership', collection: @dealerships %>
+    <h2>Bienvenido, veamos los autos disponibles</h2>
+  <div id="vehicles">
+    <% @vehicles.each do |vehicle| %>
+      <%= render vehicle %>
+    <p>
+      <%= link_to "Ver este vehiculo", vehicle %>
+    </p>
+    <% end %>
+  </div>
+
+  <%= link_to "Nuevo vehiculo", new_vehicle_path %>
+
+<% end %>
+

@@ -1,0 +1,37 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+Jeep:
+  marca: Jeep
+  modelo: Gran Cherokee
+  año: 1999
+  tipo: 
+  precio: 0.78e5
+  estado: Nuevo
+  dealership: dealershep1
+
+BMW:
+  marca: BMW
+  modelo: Sporty
+  año: 2009
+  tipo: 
+  precio: 0.78e5
+  estado: Nuevo
+  dealership: dealershep3
+
+Tsuru:
+  marca: Tsuru
+  modelo: Sturu v29
+  año: 2010
+  tipo: 
+  precio: 45000
+  estado: usado
+  dealership: dealershep2
+
+Ibiza:
+  marca: Ibiza
+  modelo: fiesta
+  año: 2015
+  tipo: 
+  precio: 90000
+  estado: usado
+  dealership: dealershep3

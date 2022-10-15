@@ -1,0 +1,53 @@
+<%= form_with(model: vehicle) do |form| %>
+  <% if vehicle.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(vehicle.errors.count, "error") %> prohibited this vehicle from being saved:</h2>
+
+      <ul>
+        <% vehicle.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :marca, style: "display: block" %>
+    <%= form.text_field :marca %>
+  </div>
+
+  <div>
+    <%= form.label :modelo, style: "display: block" %>
+    <%= form.text_field :modelo %>
+  </div>
+
+  <div>
+    <%= form.label :año, style: "display: block" %>
+    <%= form.text_field :año %>
+  </div>
+
+  <div>
+    <%= form.label :tipo, style: "display: block" %>
+
+    <%= form.select(:tipo, Vehicle.tipos, :prompt => 'Select') %>
+  </div>
+
+  <div>
+    <%= form.label :precio, style: "display: block" %>
+    <%= form.text_field :precio %>
+  </div>
+
+  <div>
+    <%= form.label :estado, style: "display: block" %>
+    <%= form.text_field :estado %>
+  </div>
+
+  <div>
+  <%= form.label :dealership_id, style: "display: block" %>
+   <%= form.collection_select :dealership_id, Dealership.all.order(nombre: :asc), :id, :nombre %>
+  </div>
+  <p> </p>
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

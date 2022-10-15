@@ -1,0 +1,17 @@
+
+<header>
+        <%= link_to t('.vehiculos'), vehicles_path %>
+        <%= link_to t('.crear usuario'), new_user_path %>
+</header>
+<h1>concesionarias</h1>
+
+<div id="dealerships">
+  <% @dealerships.each do |dealership| %>
+    <%= render dealership %>
+    <p>
+      <%= link_to "Ver esta concesionaria", dealership %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "Nueva concesionaria", new_dealership_path %>
