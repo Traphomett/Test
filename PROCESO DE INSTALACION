@@ -4,7 +4,7 @@ Se tendra que mover al directorio del proyecto para correr el server: "cd Test"
 Acto seguido el server dara una direccion local para el login la cual será: http://127.0.0.1:3000/sessions/new 
 
 Hay un usuario registrado en la DB:
-Username: test
+Username: test (parece que el usuario se traduce aqui a "Prueba") o pedro11 (es la misma contraseña)
 Password: testme
 (Unicamente se puede iniciar sesion como admin)
 
