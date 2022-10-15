@@ -1,0 +1,24 @@
+Para correr correctamente el proyecto utilize una maquina virtual de ubuntu que instale desde CMD, pienso que es el mismo proceso para iniciarlo en un espacio adecuado
+Dentro de mi servidor local de Rails inicio el servicio con el comando "rails s" 
+Se tendra que mover al directorio del proyecto para correr el server: "cd Test"
+Acto seguido el server dara una direccion local para el login la cual será: http://127.0.0.1:3000/sessions/new 
+
+Hay un usuario registrado en la DB:
+Username: test
+Password: testme
+(Unicamente se puede iniciar sesion como admin)
+
+en dado caso que no funcionara el login adecuadamente con el usuario(al no estar registrado) sera la siguiente direccion local para vizualizar la prueba: http://127.0.0.1:3000/vehiculo
+
+Dentro del index hay un header que tiene el siguiente apartado: concesionaria el cual tiene el formulario para las concesionarias
+Concesionaria: http://127.0.0.1:3000/concesionarias
+Se pueden ingresar concesionarias
+Se pueden visualizar
+
+Vehículos: http://127.0.0.1:3000/vehiculo
+Se pueden visualizar
+Se pueden agregar (Actualmente tengo error al ingresar un auto con el tipo (Pick-Up, Urban, etc.) al que pertenece ya que me marca que no es valido ingresarlo con ese campo nada mas, si se agrega el auto
+sin el tipo se hace "correctamente" a la concesionaria que perteneze)
+Se pueden eliminar
+
+Y por el momento es todo lo que realiza el test, gracias por su comprensión.
