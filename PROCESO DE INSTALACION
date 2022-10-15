@@ -14,6 +14,8 @@ Dentro del index hay un header que tiene el siguiente apartado: concesionaria el
 Concesionaria: http://127.0.0.1:3000/concesionarias
 Se pueden ingresar concesionarias
 Se pueden visualizar
+dentro del apartado de concesionarias hay un vinvulo para crear usuarios (unicamente admin)
+Create User: http://127.0.0.1:3000/users/new
 
 Vehículos: http://127.0.0.1:3000/vehiculo
 Se pueden visualizar
